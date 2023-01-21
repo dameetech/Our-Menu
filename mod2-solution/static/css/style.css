@@ -1,0 +1,103 @@
+header {
+	text-align: center;
+}
+
+.row {
+	margin: auto;
+}
+section {
+	background-color: gray;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+section p {
+	margin: 5px 10px 20px 10px;
+}
+
+h3 {
+	text-align: center;
+    border: 1px solid black;
+  
+}
+
+
+
+
+#headerSection1 {
+	background-color: pink;
+}
+
+#headerSection2 {
+	background-color: red;
+}
+
+#headerSection3 {
+	background-color: yellow;
+}
+
+/*Media query section*/
+
+/********** Desktop view *********/
+ @media (min-width: 992px) { 
+ 	section {
+ 		margin: 1% 1%;
+    	padding: 0% 2%;
+    	width: 31%;
+    	float: left;/* consider putting this in media query*/
+ 	}
+
+ 	h3 {
+ 		padding: 1% 1%;
+    	margin: 0% 0% 1% 0%;
+    	position: relative;
+    	left: 75%;
+    	width: 30%;
+ 	}
+}
+
+/********** Tablet Devices only *********/
+ @media (min-width: 768px) and (max-width: 991px) { 
+  	#section1, #section2 {
+ 		margin: 1% 1%;
+    	padding: 0% 2%;
+    	width: 48%;
+    	float: left;/* consider putting this in media query*/
+ 	}
+
+ 	#section3 {
+ 		margin: 1% 1%;
+    	padding: 0% 2%;
+    	clear: left;/* consider putting this in media query*/
+ 	}
+
+ 	h3 {
+ 		padding: 1% 1%;
+    	margin: 0% 0% 1% 0%;
+    	position: relative;
+    	left: 72%;
+    	width: 30%;
+ 	}
+
+ 	#headerSection3 {
+ 		left: 79.9%;
+    	width: 20%;
+
+ 	}
+ }
+/********** Mobile devices only *********/
+ @media (max-width: 767px) {
+ 	section {
+ 		margin: 1% 1%;
+    	padding: 0% 2%;
+    	width: 98%;
+ 	}
+
+ 	h3 {
+ 		padding: 1% 1%;
+    	margin: 0% 0% 1% 0%;
+    	position: relative;
+    	left: 74.8%;
+    	width: 25%;
+ 	}
+ }   	  
